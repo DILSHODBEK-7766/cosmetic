@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+
+@layer utilities{
+
+    /* STICKY NAVBAR START!!! */
+    .sticky{
+        background: #899f8790;
+    }
+    /* STICKY NAVBAR END!!! */
+    /* ================================ */
+    
+}
+
+@font-face {
+    font-family: 'aileron';
+    src: url('../fonts/aileron.bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'aileron';
+    src: url('../fonts/aileron.semibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'aileron';
+    src: url('../fonts/aileron.regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'aileron';
+    src: url('../fonts/aileron.light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'ivy-mode';
+    src: url('../fonts/ivy-mode-light.ttf');
+    font-weight: 300;
+}
+
+.ail-700{
+    font-family: "aileron";
+    font-weight: 700;
+}
+
+.ail-600{
+    font-family: "aileron";
+    font-weight: 600;
+}
+
+.ail-400{
+    font-family: "aileron";
+    font-weight: 400;
+}
+
+.ail-300{
+    font-family: "aileron";
+    font-weight: 300;
+}
+
+.ivy-300{
+    font-family: "ivy-mode";
+    font-weight: 300;
+}
