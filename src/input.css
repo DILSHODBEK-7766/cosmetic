@@ -6,10 +6,24 @@
 
     /* STICKY NAVBAR START!!! */
     .sticky{
-        background: #899f8790;
+        background: #899f87b9;
     }
     /* STICKY NAVBAR END!!! */
     /* ================================ */
+
+    @keyframes marquee {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+        animation: marquee 18s linear infinite;
+    }
+
+    .activeBtn{
+        background: #C8D8C0;
+        color: #213721;
+    }
     
 }
 
