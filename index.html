@@ -541,63 +541,63 @@
 
                         <!-- FILTER BUTTON START!!! -->
 
-                        <div class="space-y-3 max-[1220px]:flex max-[1220px]:flex-col max-[1220px]:items-center">
+                        <div class="space-y-3 max-[1220px]:space-y-0 max-[1220px]:flex max-[1220px]:flex-col max-[1220px]:items-center max-[1220px]:gap-3 max-[450px]:flex-row max-[450px]:w-70 max-[450px]:mx-auto max-[450px]:whitespace-nowrap max-[450px]:overflow-x-scroll max-[450px]:pb-1">
 
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 max-[600px]:flex-wrap max-[600px]:justify-center max-[450px]:flex-nowrap max-[450px]:shrink-0">
 
-                                <button type="button" class="activeBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">All needs</button>
+                                <button type="button" data-filter="all" class="filterBtn activeBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">All needs</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Protect</button>
+                                <button type="button" data-filter="protect" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Protect</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Regenerates</button>
-
-                            </div>
-
-                            <div class="flex items-center gap-3">
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Revitalizes</button>
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Feeds</button>
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Regulates</button>
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Purifies</button>
+                                <button type="button" data-filter="regenerates" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Regenerates</button>
 
                             </div>
 
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 max-[600px]:flex-wrap max-[600px]:justify-center max-[450px]:flex-nowrap max-[450px]:shrink-0">
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Makeup Removal</button>
+                                <button type="button" data-filter="revitalizes" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Revitalizes</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Exfoliate</button>
+                                <button type="button" data-filter="feeds" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Feeds</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Antioxidant</button>
+                                <button type="button" data-filter="regulates" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Regulates</button>
 
-                            </div>
-
-                            <div class="flex items-center gap-3">
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Soothes</button>
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Smoothes skin texture</button>
-
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Tones</button>
+                                <button type="button" data-filter="purifies" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Purifies</button>
 
                             </div>
 
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 max-[600px]:flex-wrap max-[600px]:justify-center max-[450px]:flex-nowrap max-[450px]:shrink-0">
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Anti-waste</button>
+                                <button type="button" data-filter="makeup" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Makeup Removal</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Hydrate</button>
+                                <button type="button" data-filter="exfoliate" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Exfoliate</button>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Strengthens</button>
+                                <button type="button" data-filter="antioxidant" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Antioxidant</button>
+
+                            </div>
+
+                            <div class="flex items-center gap-3 max-[600px]:flex-wrap max-[600px]:justify-center max-[450px]:flex-nowrap max-[450px]:shrink-0">
+
+                                <button type="button" data-filter="soothes" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Soothes</button>
+
+                                <button type="button" data-filter="skin" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Smoothes skin texture</button>
+
+                                <button type="button" data-filter="tones" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Tones</button>
+
+                            </div>
+
+                            <div class="flex items-center gap-3 max-[600px]:flex-wrap max-[600px]:justify-center max-[450px]:flex-nowrap max-[450px]:shrink-0">
+
+                                <button type="button" data-filter="anti-waste" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Anti-waste</button>
+
+                                <button type="button" data-filter="hydrate" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Hydrate</button>
+
+                                <button type="button" data-filter="strengthens" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Strengthens</button>
 
                             </div>
 
                             <div>
 
-                                <button type="button" class="ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer">Regenerates after UV exposure Strengthens</button>
+                                <button type="button" data-filter="uv" class="filterBtn ail-400 text-lg text-[#899F87] border border-[#C8D8C0] rounded-4xl px-7 py-3 cursor-pointer transition duration-300 ease-in-out">Regenerates after UV exposure Strengthens</button>
 
                             </div>
 
@@ -605,6 +605,7 @@
 
                         <!-- FILTER BUTTON END!!! -->
                         <!-- ================================== -->
+
                     </div>
 
 
@@ -612,9 +613,9 @@
 
                     <div>
 
-                        <div class="grid grid-cols-2 gap-10 max-[700px]:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+                        <div class="grid grid-cols-2 gap-10 max-[600px]:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
 
-                            <div class="border-2 border-[#E4ECE0]">
+                            <div data-category="protect" class="filterItem border-2 border-[#E4ECE0]">
 
                                 <img src="./img/classwing.png" alt="classwing" class="bg-[#E4ECE0]">
 
@@ -646,7 +647,7 @@
 
                             </div>
 
-                            <div class="border-2 border-[#E4ECE0]">
+                            <div data-category="regenerates" class="filterItem border-2 border-[#E4ECE0]">
 
                                 <img src="./img/holocane.png" alt="holocane" class="bg-[#E4ECE0]">
 
@@ -678,7 +679,7 @@
 
                             </div>
 
-                            <div class="border-2 border-[#E4ECE0]">
+                            <div data-category="revitalizes" class="filterItem border-2 border-[#E4ECE0]">
 
                                 <img src="./img/inamorata.png" alt="inamorata" class="bg-[#E4ECE0]">
 
@@ -710,7 +711,7 @@
 
                             </div>
 
-                            <div class="border-2 border-[#E4ECE0]">
+                            <div data-category="feeds" class="filterItem border-2 border-[#E4ECE0]">
 
                                 <img src="./img/lighschool.png" alt="LIGHTCOOL" class="bg-[#E4ECE0]">
 
@@ -744,7 +745,7 @@
 
                         </div>
 
-                        <button type="button" class="my-10 group text-[#213721] ail-400 text-xl bg-white border-2 border-[#213721] hover:border-transparent rounded-sm px-10 py-4 flex items-center gap-5 hover:bg-[rgba(22,41,5,0.73)] cursor-pointer hover:text-[#f2f6efc5] transition duration-300 ease-in-out max-[1210px]:px-20 max-[1000px]:text-lg max-[1000px]:px-16 max-[600px]:px-10 max-[600px]:mt-8 max-[500px]:text-base max-[500px]:py-4 max-[430px]:px-6 max-[375px]:py-3">
+                        <button type="button" id="shopNowBtn" class="my-10 group text-[#213721] ail-400 text-xl bg-white border-2 border-[#213721] hover:border-transparent rounded-sm px-10 py-4 flex items-center gap-5 hover:bg-[rgba(22,41,5,0.73)] cursor-pointer hover:text-[#f2f6efc5] transition duration-300 ease-in-out max-[1210px]:px-20 max-[1000px]:text-lg max-[1000px]:px-16 max-[600px]:px-10 max-[600px]:mt-8 max-[500px]:text-base max-[500px]:py-4 max-[430px]:px-6 max-[375px]:py-3">
                             Shop now 
                             <i class="fa-solid fa-arrow-right-long text-[#213721] text-2xl group-hover:text-[#f2f6efc5] transition duration-300 ease-in-out max-[1000px]:text-xl max-[375px]:text-lg"></i>
                         </button>
@@ -754,6 +755,17 @@
                     <!-- PRODUCT TYPE END!!! -->
                     <!-- ============================== -->
 
+                        <div id="productsGrid" class="grid grid-cols-2 gap-10 ..."></div>
+
+                        <div id="emptyMessage" class="hidden flex-col items-center justify-center text-center py-20 w-full col-span-2">
+
+                            <i class="fa-solid fa-box-open text-5xl text-[#C8D8C0] mb-4"></i>
+
+                            <h2 class="ivy-300 text-3xl text-[#213721]">No items found!</h2>
+
+                            <p class="ail-300 text-[#3C5E39] mt-2">This product category will be available shortly.</p>
+
+                        </div>
                 </div>
                 
             </div>
@@ -761,6 +773,120 @@
         </section>
 
         <!-- SECTION FILTER START!!! -->
+        <!-- ============================== -->
+
+        
+        <!-- SECTION SERVICE START!!! -->
+
+        <section class="border-t-2 border-b-2 border-[#C8D8C0] mt-15 mb-10 py-10">
+            <div class="max-w-287.5 mx-auto max-[1175px]:px-5">
+
+                <div class="flex items-center justify-between gap-42 max-[1100px]:gap-10 max-[1000px]:flex-col">
+
+                    <img src="./img/diagnosis-img.svg" alt="diagnosis-img">
+
+                    <div class="max-[1000px]:text-center max-[1000px]:justify-items-center max-[500px]:text-start max-[500px]:justify-items-start">
+
+                        <h4 class="text-[#899F87] ail-300 text-[28px] max-[600px]:text-2xl max-[500px]:text-xl">Try Our Service</h4>
+
+                        <h1 class="text-[#213721] ivy-300 text-6xl my-5 max-[600px]:text-[55px] max-[600px]:my-2 max-[530px]:text-5xl max-[420px]:text-[40px] max-[360px]:text-[35px]">Your skin diagnosis in 3 minutes</h1>
+
+                        <p class="text-[#3C5E39] ail-300 text-xl max-[600px]:text-lg max-[500px]:text-base max-[420px]:hidden">
+                            Say hello to a more radiant, healthier you with personalized <br> skincare that's as unique as you are.
+                        </p>
+
+                        <button type="button" class="mt-10 group text-[#213721] ail-400 text-xl bg-transparent border-2 border-[#213721] hover:border-transparent rounded-sm px-10 py-4 flex items-center gap-5 hover:bg-[rgba(22,41,5,0.73)] cursor-pointer hover:text-[#f2f6efc5] transition duration-300 ease-in-out max-[1210px]:px-20 max-[1000px]:text-lg max-[1000px]:px-16 max-[600px]:px-10 max-[600px]:mt-8 max-[500px]:px-4 max-[500px]:text-base max-[500px]:py-3 max-[430px]:px-6 max-[375px]:py-3">
+                            Start my diagnosis
+                            <i class="fa-solid fa-arrow-right-long text-[#213721] text-2xl group-hover:text-[#f2f6efc5] transition duration-300 ease-in-out max-[1000px]:text-xl max-[375px]:text-lg"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION SERVICE END!!! -->
+        <!-- ==================================== -->
+
+
+        <!-- SECTION TESTIMONIAL START!!! -->
+
+        <section id="heroReview " class="border-b-2 border-[#C8D8C0] mb-15 pb-10">
+            <div class="max-w-337.5 mx-auto max-[1370px]:px-5">
+
+                <div class="flex items-center justify-between gap-30 max-[1250px]:gap-15 max-[1120px]:flex-col">
+
+                    <img id="reviewImg" src="./img/TESTIMONIALS-IMG.png" alt="TESTIMONIALS-IMG" class="bg-[#899F87] rounded-[100%] transition duration-300 ease-in-out">
+
+                    <div class="flex items-center justify-between gap-7 max-[1120px]:flex-col">
+
+                        <div class="max-[1120px]:text-center max-[1120px]:justify-items-center max-[500px]:text-start max-[500px]:justify-items-start">
+
+                            <h5 class="ail-300 text-2xl text-[#899F87] max-[500px]:text-xl">Product Testimonials</h5>
+
+                            <div id="reviewStar" class="cursor-pointer flex items-center gap-3 pt-15 pb-10 max-[500px]:pt-5 max-[500px]:pb-5 max-[500px]:gap-2">
+                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                            </div>
+
+                            <h2 id="reviewText" class="ivy-400 text-[#213721] text-4xl mb-7 max-[500px]:text-3xl max-[425px]:text-2xl transition duration-300 ease-in-out">
+                                “I’ve been feeling pretty stressed with my skin lately, so I picked up a set of HOLOCENA skincare. Oh my goodness!. It was AMAZING. My skin felt so soft and moisturized”
+                            </h2>
+
+                            <a href="#" class="ail-300 text-[#899F87] text-xl italic max-[500px]:text-lg">- Customer Review</a>
+
+                        </div>
+
+                        <div class="flex flex-col items-center gap-2 max-[1120px]:flex-row-reverse">
+
+                            <!-- NEXT SLIDE START!!! -->
+
+                            <div id="nextBtn" class="group bg-transparent hover:bg-[rgba(22,41,5,0.56)] w-10 h-10 rounded-full flex items-center justify-center hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long text-[#213721] text-xl group-hover:text-[#f2f6efc5] group-hover:scale-90 group-hover:-translate-y-1 transition duration-300 ease-in-out max-[500px]:text-lg"></i>
+                            </div>
+
+                            <!-- NEXT SLIDE END!!! -->
+                            <!-- =============================== -->
+
+                            <!-- CUBE START!!! -->
+
+                            <div class="flex flex-col gap-3 max-[1120px]:flex-row">
+
+                                <div class="cube bg-red-600 w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
+                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
+                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
+                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
+
+                            </div>
+
+                            <!-- CUBE END!!! -->
+                            <!-- ================================= -->
+
+                            <!-- PREVSLIDE START!!! -->
+
+                            <div id="prevBtn" class="group bg-transparent hover:bg-[rgba(22,41,5,0.73)] w-10 h-10 rounded-full flex items-center justify-center hover:-translate-y-1 transition duration-300 ease-in-out cursor-pointer">
+                                <i class="fa-solid fa-arrow-left-long text-[#213721] text-xl group-hover:text-[#f2f6efc5] group-hover:scale-90 group-hover:-translate-y-1 transition-all duration-300 ease-in-out max-[500px]:text-lg"></i>
+                            </div>
+
+                            <!-- PREVSLIDE END!!! -->
+                            <!-- ================================== -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION TESTIMONIAL END!!! -->
+        <!-- ============================================ -->
 
     </main>
 
