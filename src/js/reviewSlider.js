@@ -5,24 +5,51 @@ const dataSwap = [
         image: "./img/TESTIMONIALS-IMG.png",
 
         text: "After just one application, I noticed a huge difference in my glow. It didn't feel heavy or greasy at all. I honestly think this is going to be my new daily routine!",
+
+        stars: `<i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        `,
     },
 
     {
         image: "./img/TESTIMONIALS-IMG.png",
 
         text: "Even my friends started asking what I’ve been using lately because my face looks so bright. It’s rare to find a brand that actually delivers on every single promise.",
+
+        stars: `<i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star-half-stroke text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        `,
     },
 
     {
         image: "./img/TESTIMONIALS-IMG.png",
 
         text: "The scent is so calming and the packaging looks luxury on my shelf. I’m definitely going to buy the full set next time. It is worth every penny for this kind of care.",
+
+        stars: `<i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star-half-stroke text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        `,
     },
 
     {
         image: "./img/TESTIMONIALS-IMG.png",
 
         text: "After just one application, I noticed a huge difference in my glow. It didn't feel heavy or greasy at all. I honestly think this is going to be my new daily routine!",
+
+        stars: `<i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star-half-stroke text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        <i class="fa-solid fa-star-half-stroke text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+        `,
     },
 
 ];
@@ -56,13 +83,17 @@ function updateInfo() {
 
     reviewText.classList.add("opacity-0");
 
+    reviewStar.classList.add("opacity-0");
+
     setTimeout(() => {
 
         reviewImg.src = currentSwipe.image;
         reviewText.textContent = currentSwipe.text;
+        reviewStar.innerHTML = currentSwipe.stars;
 
         reviewImg.classList.remove("opacity-0");
         reviewText.classList.remove("opacity-0");
+        reviewStar.classList.remove("opacity-0");
 
     }, 300);
 
