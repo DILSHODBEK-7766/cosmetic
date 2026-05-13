@@ -1,9 +1,9 @@
 // 1. DOM Elementlarni ushlab olamiz
 const filterBtns = document.querySelectorAll(".filterBtn");
-const filterItems = document.querySelectorAll(".filterItem"); // HTML dagi oxirgi qoldirganing bo'yicha "filterItem"
+const filterItems = document.querySelectorAll(".filterItem");
 const emptyMessage = document.getElementById("emptyMessage");
-const productsGrid = document.getElementById("productsGrid"); // Ota grid
-const shopNowBtn = document.getElementById("shopNowBtn"); // Agar HTML da ID bergan bo'lsang
+const productsGrid = document.getElementById("productsGrid");
+const shopNowBtn = document.getElementById("shopNowBtn");
 
 // 2. Bizda mahsuloti BOR bo'lgan kategoriyalar ro'yxati (Boshqa hamma tugmalar No items found ga o'tadi)
 const activeCategories = ["all", "protect", "regenerates", "revitalizes", "feeds"];
