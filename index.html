@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetics</title>
 
+    <!-- SWIPER CSS!!! -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <!-- OUTPUT CSS!!! -->
     <link rel="stylesheet" href="./src/output.css">
     <!-- FONTAWESOME!!! -->
@@ -820,72 +822,64 @@
 
         <!-- SECTION TESTIMONIAL START!!! -->
 
-        <section id="heroReview" class="border-b-2 border-[#C8D8C0] mb-15 pb-10">
+        <section class="border-b-2 border-[#C8D8C0] mb-15 pb-10">
             <div class="max-w-337.5 mx-auto max-[1370px]:px-5">
 
-                <div class="flex items-center justify-between gap-30 max-[1250px]:gap-15 max-[1120px]:flex-col">
+                <div id="mySwiper" class="swiper w-full overflow-hidden">
 
-                    <img id="reviewImg" src="./img/TESTIMONIALS-IMG.png" alt="TESTIMONIALS-IMG" class="bg-[#899F87] rounded-[100%] transition duration-300 ease-in-out">
+                    <div class="swiper-wrapper py-20">
 
-                    <div class="flex items-center justify-between gap-7 max-[1120px]:flex-col">
+                        <div class="swiper-slide-active flex items-center justify-between">
 
-                        <div class="max-[1120px]:text-center max-[1120px]:justify-items-center max-[500px]:text-start max-[500px]:justify-items-start">
+                            <!-- IMAGE!!!! -->
+                            <div class="relative flex items-center justify-center h-122.5">
 
-                            <h5 class="ail-300 text-2xl text-[#899F87] max-[500px]:text-xl">Product Testimonials</h5>
+                                <div class="bg-[#E4ECE0] absolute -z-1 w-92.5 h-150 rounded-[50%]"></div>
 
-                            <div id="reviewStar" class="cursor-pointer flex items-center gap-3 pt-15 pb-10 max-[500px]:pt-5 max-[500px]:pb-5 max-[500px]:gap-2">
-                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
-                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
-                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
-                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
-                                <i class="fa-solid fa-star text-[#3C5E39] text-2xl cursor-pointer max-[500px]:text-xl"></i>
+                                <img src="./img/TESTIMONIALS-IMG.png" alt="" class="c-img max-w-full object-contain">
+
                             </div>
+                            <!-- IMAGE!!!! -->
 
-                            <h2 id="reviewText" class="ivy-400 text-[#213721] text-4xl mb-7 max-[500px]:text-3xl max-[425px]:text-2xl transition duration-300 ease-in-out">
-                                “I’ve been feeling pretty stressed with my skin lately, so I picked up a set of HOLOCENA skincare. Oh my goodness!. It was AMAZING. My skin felt so soft and moisturized”
-                            </h2>
+                            <div>
 
-                            <a href="#" class="ail-300 text-[#899F87] text-xl italic max-[500px]:text-lg">- Customer Review</a>
+                                <p class="c-anim">Product Testimonials</p>
+
+                                <div class="c-anim">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <h1 class="c-anim">
+                                    “I’ve been feeling pretty stressed with my skin lately, so I picked up a set of HOLOCENA skincare. Oh my goodness!. It was AMAZING. My skin felt so soft and moisturized”
+                                </h1>
+
+                                <p class="c-anim">- Customer Review</p>
+
+                            </div>
 
                         </div>
+                        
+                    </div>
 
-                        <div class="flex flex-col items-center gap-2 max-[1120px]:flex-row-reverse">
+                </div>
 
-                            <!-- NEXT SLIDE START!!! -->
+                <div id="slideNav" class="flex flex-col items-center gap-5">
 
-                            <div id="nextBtn" class="group bg-transparent hover:bg-[rgba(22,41,5,0.56)] w-10 h-10 rounded-full flex items-center justify-center hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
-                                <i class="fa-solid fa-arrow-right-long text-[#213721] text-xl group-hover:text-[#f2f6efc5] group-hover:scale-90 group-hover:-translate-y-1 transition duration-300 ease-in-out max-[500px]:text-lg"></i>
-                            </div>
+                    <button type="button" id="btnNext" class="cursor-pointer">
+                        <i class="fa-solid fa-arrow-right"><span class="hidden">.</span></i>
+                    </button>
 
-                            <!-- NEXT SLIDE END!!! -->
-                            <!-- =============================== -->
-
-                            <!-- CUBE START!!! -->
-
-                            <div class="flex flex-col gap-3 max-[1120px]:flex-row">
-
-                                <div class="cube bg-red-600 w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
-                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
-                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
-                                <div class="cube bg-black w-1 h-1 rotate-45 transition duration-300 ease-in-out"></div>
-
-                            </div>
-
-                            <!-- CUBE END!!! -->
-                            <!-- ================================= -->
-
-                            <!-- PREVSLIDE START!!! -->
-
-                            <div id="prevBtn" class="group bg-transparent hover:bg-[rgba(22,41,5,0.73)] w-10 h-10 rounded-full flex items-center justify-center hover:-translate-y-1 transition duration-300 ease-in-out cursor-pointer">
-                                <i class="fa-solid fa-arrow-left-long text-[#213721] text-xl group-hover:text-[#f2f6efc5] group-hover:scale-90 group-hover:-translate-y-1 transition-all duration-300 ease-in-out max-[500px]:text-lg"></i>
-                            </div>
-
-                            <!-- PREVSLIDE END!!! -->
-                            <!-- ================================== -->
-
-                        </div>
+                    <div id="navDots" class="flex flex-col gap-3">
 
                     </div>
+
+                    <button type="button" id="btnPrev" class="cursor-pointer">
+                        <i class="fa-solid fa-arrow-left"><span class="hidden">.</span></i>
+                    </button>
 
                 </div>
 
@@ -992,7 +986,7 @@
 
                             <button type="submit" class="mt-1 rounded-sm px-5 py-2.5 cursor-pointer">
                             
-                            <i class="fa-solid fa-arrow-right-long text-[#213721] text-2xl max-[1000px]:text-xl max-[375px]:text-lg"></i>
+                            <i class="fa-solid fa-arrow-right-long text-[#213721] text-2xl max-[1000px]:text-xl max-[375px]:text-lg"><span class="hidden">.</span></i>
                             
                             </button>
 
@@ -1079,14 +1073,13 @@
 
                         <ul class="pt-12 text-center space-y-4 max-[600px]:pt-0">
 
-                            <li><a href="#" class="ail-300 text-[#899F87] text-[28px]">Desk</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Chat</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">FAQ</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Shipping & Returns</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Contact</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Policies</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Accessibility</a></li>
-                            <li><a href="#" class="ail-400 text-[#213721] text-xl">My Account</a></li>
+                            <li><a href="#" class="ail-300 text-[#899F87] text-[28px]">Stores</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Manhattan</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Brooklyn</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Tokyo</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Jakarta</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Paris</a></li>
+                            <li><a href="#" class="ail-400 text-[#213721] text-xl">Buenos Aires</a></li>
 
                         </ul>
 
@@ -1122,6 +1115,9 @@
 
     <!-- FOOTER END!!! -->
     <!-- =========================== -->
+
+    <!-- SWIPER JS!!! -->
+    <script src="./node_modules/swiper/swiper-bundle.js"></script>
 
     <!-- MAIN JS!!! -->
     <script type="module" src="./src/js/main.js"></script>

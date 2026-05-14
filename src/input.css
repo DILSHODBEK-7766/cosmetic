@@ -2,6 +2,34 @@
 
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
 
+
+.swiper-slide{
+    opacity: 0 !important;
+    transition: opacity 0s;
+}
+
+.swiper-slide-active{
+    opacity: 1 !important;
+}
+
+.c-anim{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .2s cubic-bezier(.4, 0, .2, 1), transform .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.c-img{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .2s cubic-bezier(.4, 0, .2, 1), transform .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.nav-dot{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+
 @layer utilities{
 
     /* STICKY NAVBAR START!!! */
